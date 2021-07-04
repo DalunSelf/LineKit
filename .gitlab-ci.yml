@@ -1,0 +1,20 @@
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  Remote_IP:
+    value: "root@172.105.194.174"
+    description: "This variable makes cakes delicious"
+  Remote_Path:
+    value: "/www/admin/laravel.test.iciwp.com_80/wwwroot/demo-laravel"
+    description: "This variable makes cakes delicious"
+
+# 測試
+laravel-test:
+  stage: deploy
+  script:
+    - echo {$Remote_Path}
+    - echo {$Remote_IP}
+    - ssh $Remote_IP "cd $Remote_Path && composer config repositories.ryan-dev git git@gitlab.com:ici2/dev.git && composer require ryan/dev"
