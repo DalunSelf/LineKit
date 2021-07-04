@@ -2,7 +2,7 @@
 
 namespace Ryan\LineKit;
 
-use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
 
 class KitServiceProvider extends ServiceProvider
@@ -26,10 +26,13 @@ class KitServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        $this->routes(function () {
-            Route::prefix('api/backend')
-                ->middleware('api')
-                ->group(__DIR__ . '/../routes/api-backend.php');
+        Route::group([
+            // 'domain' => 'api' . config('app.url'), // don't call `env` outside of configs
+            // 'namespace' => $this->namespace,
+            'prefix' => 'api/backend',
+            'middleware' => 'api',
+        ], function () {
+            $this->loadRoutesFrom(__DIR__ . '/../routes/api-backend.php');
         });
     }
 }
