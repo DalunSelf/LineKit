@@ -28,7 +28,7 @@ use Illuminate\Support\Facades\Route;
 
 // 測試路由開通狀態
 Route::get('/test-linekit', function (Request $request) {
-    return 'OK';
+    return response()->json('ok', 200);
 });
 
 // 後台管理
