@@ -7,7 +7,7 @@ composer config repositories.dev git git@gitlab.com:apple040285.1/dev.git
 
 ## 開始安裝
 ```
-composer require ryan/dev
+composer require ryan/linekit
 ```
 
 ## 執行單元測試
