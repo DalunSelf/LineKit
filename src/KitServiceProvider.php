@@ -30,7 +30,7 @@ class KitServiceProvider extends ServiceProvider
             // 'domain' => 'api' . config('app.url'), // don't call `env` outside of configs
             // 'namespace' => $this->namespace,
             'prefix' => 'api/backend',
-            'middleware' => 'api',
+            // 'middleware' => 'api',
         ], function () {
             $this->loadRoutesFrom(__DIR__ . '/../routes/api-backend.php');
         });
