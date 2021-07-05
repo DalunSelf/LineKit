@@ -2,11 +2,11 @@
 
 namespace Ryan\LineKit\Http\Controllers\Backend;
 
+use App\Services\v2\OrganizationService;
 use Ryan\LineKit\Http\Controllers\Controller;
 use Ryan\LineKit\Services\v2\LineChannelService;
 use Ryan\LineKit\Services\v2\LineChatService;
 use Ryan\LineKit\Services\v2\LineMemberService;
-use Ryan\LineKit\Services\v2\OrganizationService;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
