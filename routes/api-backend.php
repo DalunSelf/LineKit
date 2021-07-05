@@ -1,14 +1,14 @@
 <?php
 
-use Ryan\LineKit\Http\Controllers\Backend\v2\LineChannelController;
-use Ryan\LineKit\Http\Controllers\Backend\v2\LineChatController;
-use Ryan\LineKit\Http\Controllers\Backend\v2\LineFlexTemplateController;
-use Ryan\LineKit\Http\Controllers\Backend\v2\LineKeywordController;
-use Ryan\LineKit\Http\Controllers\Backend\v2\LineMemberController;
-use Ryan\LineKit\Http\Controllers\Backend\v2\LinePushActionRecordController;
-use Ryan\LineKit\Http\Controllers\Backend\v2\LinePushController;
-use Ryan\LineKit\Http\Controllers\Backend\v2\LineRichMenuController;
-use Ryan\LineKit\Http\Controllers\Backend\v2\LineTagController;
+use Ryan\LineKit\Http\Controllers\Backend\LineChannelController;
+use Ryan\LineKit\Http\Controllers\Backend\LineChatController;
+use Ryan\LineKit\Http\Controllers\Backend\LineFlexTemplateController;
+use Ryan\LineKit\Http\Controllers\Backend\LineKeywordController;
+use Ryan\LineKit\Http\Controllers\Backend\LineMemberController;
+use Ryan\LineKit\Http\Controllers\Backend\LinePushActionRecordController;
+use Ryan\LineKit\Http\Controllers\Backend\LinePushController;
+use Ryan\LineKit\Http\Controllers\Backend\LineRichMenuController;
+use Ryan\LineKit\Http\Controllers\Backend\LineTagController;
 use Ryan\LineKit\Http\Middleware\LineRequestMiddleware;
 use Ryan\LineKit\Http\Middleware\OrganizationMiddleware;
 use Ryan\LineKit\Http\Middleware\SettingLogMiddleware;

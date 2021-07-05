@@ -1,6 +1,6 @@
 <?php
 
-namespace Ryan\LineKit\Http\Controllers\Backend\v2;
+namespace Ryan\LineKit\Http\Controllers\Backend;
 
 use Ryan\LineKit\Http\Controllers\Controller;
 use Ryan\LineKit\Services\v2\LineTagService;
