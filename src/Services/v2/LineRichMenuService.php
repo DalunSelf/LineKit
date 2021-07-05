@@ -2,8 +2,8 @@
 
 namespace Ryan\LineKit\Services\v2;
 
+use App\Services\Sdk\LineBotRichmenuService;
 use Ryan\LineKit\Repositories\v2\LineRichMenuRepository;
-use Ryan\LineKit\Services\Sdk\LineBotRichmenuService;
 use Ryan\LineKit\Services\Service;
 use Illuminate\Database\Eloquent\Model;
 

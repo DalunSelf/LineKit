@@ -2,8 +2,8 @@
 
 namespace Ryan\LineKit\Http\Controllers\Backend;
 
+use App\Services\Sdk\LineBotService;
 use Ryan\LineKit\Http\Controllers\Controller;
-use Ryan\LineKit\Services\Sdk\LineBotService;
 use Ryan\LineKit\Services\v2\LineChannelService;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;

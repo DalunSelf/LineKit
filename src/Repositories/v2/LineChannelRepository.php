@@ -2,8 +2,8 @@
 
 namespace Ryan\LineKit\Repositories\v2;
 
+use App\Repositories\Traits\PaginateWithPermissionAndRole;
 use Ryan\LineKit\Repositories\Repository;
-use Ryan\LineKit\Repositories\Traits\PaginateWithPermissionAndRole;
 
 class LineChannelRepository extends Repository
 {

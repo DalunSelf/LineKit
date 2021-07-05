@@ -3,7 +3,7 @@
 namespace Ryan\LineKit\Services\v2;
 
 use App\Events\LineChatPusher;
-use Ryan\LineKit\Repositories\v2\UserRepository;
+use App\Repositories\v2\UserRepository;
 use Ryan\LineKit\Repositories\v2\LineChatRepository;
 use Ryan\LineKit\Repositories\v2\LineMemberRepository;
 use Ryan\LineKit\Services\Service;

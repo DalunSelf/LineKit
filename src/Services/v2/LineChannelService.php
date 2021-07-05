@@ -2,6 +2,7 @@
 
 namespace Ryan\LineKit\Services\v2;
 
+use App\Services\Sdk\LineBotService as SdkLineBotService;
 use Ryan\LineKit\Repositories\v2\LineChannelRepository;
 use Ryan\LineKit\Services\Sdk\LineBotService;
 use Ryan\LineKit\Services\Service;
@@ -11,7 +12,7 @@ class LineChannelService extends Service
     protected $lineChannelRepository;
     protected $lineBotService;
 
-    public function __construct(LineChannelRepository $lineChannelRepository, LineBotService $lineBotService)
+    public function __construct(LineChannelRepository $lineChannelRepository, SdkLineBotService $lineBotService)
     {
         parent::__construct($lineChannelRepository);
 

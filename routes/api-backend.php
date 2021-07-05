@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Middleware\Custom\OrganizationMiddleware;
+use App\Http\Middleware\Custom\SettingLogMiddleware;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 use Ryan\LineKit\Http\Controllers\Backend\LineChannelController;
 use Ryan\LineKit\Http\Controllers\Backend\LineChatController;
 use Ryan\LineKit\Http\Controllers\Backend\LineFlexTemplateController;
@@ -10,10 +14,6 @@ use Ryan\LineKit\Http\Controllers\Backend\LinePushController;
 use Ryan\LineKit\Http\Controllers\Backend\LineRichMenuController;
 use Ryan\LineKit\Http\Controllers\Backend\LineTagController;
 use Ryan\LineKit\Http\Middleware\LineRequestMiddleware;
-use Ryan\LineKit\Http\Middleware\OrganizationMiddleware;
-use Ryan\LineKit\Http\Middleware\SettingLogMiddleware;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,8 +27,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 // 測試路由開通狀態
-Route::get('/test-linekit', function (Request $request) {
-    return response()->json('ok', 200);
+Route::get('/test-line', function (Request $request) {
+    return response()->json('line-ok', 200);
 });
 
 // 後台管理

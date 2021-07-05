@@ -2,6 +2,7 @@
 
 namespace Ryan\LineKit\Models;
 
+use App\Models\Traits\CommonHasOne;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,7 +11,7 @@ class LineKeyword extends Model
     use HasFactory;
 
     // 通用一對一關聯
-    use Traits\CommonHasOne;
+    use CommonHasOne;
 
     protected $guarded = [];
 

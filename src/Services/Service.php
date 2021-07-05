@@ -3,7 +3,6 @@
 namespace Ryan\LineKit\Services;
 
 use Ryan\LineKit\Repositories\Repository;
-use Ryan\LineKit\Repositories\v2\OrganizationRepository;
 use Illuminate\Database\Eloquent\Relations\Relation;
 
 abstract class Service

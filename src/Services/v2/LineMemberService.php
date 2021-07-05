@@ -2,9 +2,8 @@
 
 namespace Ryan\LineKit\Services\v2;
 
-use App\Events\LineChatPusher;
+use App\Repositories\v2\OrganizationRepository;
 use Ryan\LineKit\Repositories\v2\LineMemberRepository;
-use Ryan\LineKit\Repositories\v2\OrganizationRepository;
 use Ryan\LineKit\Services\Service;
 
 class LineMemberService extends Service
