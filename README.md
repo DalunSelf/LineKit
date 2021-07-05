@@ -1,7 +1,7 @@
 ## 設定路徑
 
 ```
-composer config repositories.dev git git@gitlab.com:DevOpsKit/linekit.git
+composer config repositories.line git git@gitlab.com:DevOpsKit/linekit.git
 ```
 
 
