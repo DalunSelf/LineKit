@@ -28,7 +28,7 @@ use Ryan\LineKit\Http\Middleware\LineRequestMiddleware;
 
 // 測試路由開通狀態
 Route::get('/test-line', function (Request $request) {
-    return response()->json('line-ok', 200);
+    return response()->json('line-ok123', 200);
 });
 
 // 後台管理
