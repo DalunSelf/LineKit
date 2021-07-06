@@ -15,6 +15,7 @@ variables:
 laravel-test:
   stage: deploy
   script:
+    - echo {$Test}
     - echo {$Remote_Path}
     - echo {$Remote_IP}
     - ssh $Remote_IP "cd $Remote_Path && composer config repositories.ryan-dev git git@gitlab.com:ici2/dev.git && composer require ryan/dev"
