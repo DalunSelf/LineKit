@@ -16,4 +16,9 @@ vendor/bin/phpunit .\tests\
 ```
 
 
+## 安裝的套件
 composer require --dev beyondcode/laravel-package-tools
+
+
+## 若是開發模式請需
+composer require laravel/chillbot:@dev --prefer-source --prefer-dist --dev
